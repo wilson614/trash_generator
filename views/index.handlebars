@@ -15,31 +15,33 @@
     </div>
   </div>
 
-  <form action="" method="post" style="display: flex; justify-content:space-around; padding-top: 20px;">
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="exampleRadios" id="engineer" value="engineer" checked>
-      <label class="form-check-label" for="engineer">
-        工程師
-      </label>
+  <form action="/" method="post" style="padding-top: 20px;">
+    <div style="display: flex; justify-content:space-around;">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="target" id="engineer" value="engineer" checked>
+        <label class="form-check-label" for="engineer">
+          工程師
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="target" id="designer" value="designer">
+        <label class="form-check-label" for="designer">
+          設計師
+        </label>
+      </div>
+      <div class="form-check disabled">
+        <input class="form-check-input" type="radio" name="target" id="entrepreneur" value="entrepreneur">
+        <label class="form-check-label" for="entrepreneur">
+          創業家
+        </label>
+      </div>
     </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="exampleRadios" id="designer" value="designer">
-      <label class="form-check-label" for="designer">
-        設計師
-      </label>
-    </div>
-    <div class="form-check disabled">
-      <input class="form-check-input" type="radio" name="exampleRadios" id="entrepreneur" value="entrepreneur">
-      <label class="form-check-label" for="entrepreneur">
-        創業家
-      </label>
-    </div>
-  </form>
     
-  <div class="col-sm-10" style="display: flex; margin: 50px 100px; text-align:center">
-    <div style="width: 150px;"><a href="./"><button type="button" class="btn btn-primary">產生幹話</button></a></div>
-    <div class="input-group">
-      <textarea class="form-control" aria-label="With textarea"></textarea>
+    <div class="col-sm-10" style="display: flex; margin: 50px 100px; text-align:center">
+      <div style="width: 150px;"><button type="submit" class="btn btn-primary" id="submit">產生幹話</button></div>
+      <div class="input-group">
+        <textarea class="form-control" aria-label="With textarea">{{ trash }}</textarea>
+      </div>
     </div>
-  </div>
+  </form>  
 </div>
