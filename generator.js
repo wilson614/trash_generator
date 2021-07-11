@@ -16,7 +16,7 @@ function generator(option) {
   } else if (option.target === 'designer') {
     Task = task.designer
     target = '設計師'
-  } else {
+  } else if (option.target === 'entrepreneur') {
     Task = task.entrepreneur
     target = '創業家'
   }
