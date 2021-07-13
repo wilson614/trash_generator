@@ -19,6 +19,8 @@ function generator(option) {
   } else if (option.target === 'entrepreneur') {
     Task = task.entrepreneur
     target = '創業家'
+  } else {
+    return '請選擇正確對象！'
   }
 
   function sampleTask(Task) {
